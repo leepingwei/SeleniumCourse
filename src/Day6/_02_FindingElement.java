@@ -47,7 +47,7 @@ public class _02_FindingElement {
         System.out.println(startText);
 
 
-        // // Finding element by Tag Name
+        // Finding element by Tag Name
         WebElement randomH3 = driver.findElement(By.tagName("h3"));
         String randomText = randomH3.getText();
         System.out.println(randomText);
@@ -60,7 +60,7 @@ public class _02_FindingElement {
 
 
         // Finding element by CSS Selector
-        WebElement randomCss = driver.findElement(By.cssSelector(".head"));
+        WebElement randomCss = driver.findElement(By.cssSelector(".head")); // div[class=head]
         String randomCssText = randomCss.getText();
         System.out.println(randomCssText);
 
