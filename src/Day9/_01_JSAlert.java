@@ -14,12 +14,8 @@ public class _01_JSAlert {
 
         driver.get("http://the-internet.herokuapp.com/javascript_alerts");
 
-        Thread.sleep(2000);
-
         WebElement forJSAlert = driver.findElement(By.cssSelector("button[onclick='jsAlert()']"));
         forJSAlert.click();
-
-        Thread.sleep(2000);
 
         String alertMessage = driver.switchTo().alert().getText();
         driver.switchTo().alert().accept();

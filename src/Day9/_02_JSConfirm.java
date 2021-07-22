@@ -17,16 +17,12 @@ public class _02_JSConfirm {
         WebElement JSConfirm = driver.findElement(By.cssSelector("button[onclick='jsConfirm()']"));
         JSConfirm.click();
 
-        Thread.sleep(2000);
-
         String alertMessage = driver.switchTo().alert().getText();
         driver.switchTo().alert().dismiss();
 
-        Thread.sleep(2000);
-
         System.out.println(alertMessage);
 
-
+        driver.quit();
 
     }
 

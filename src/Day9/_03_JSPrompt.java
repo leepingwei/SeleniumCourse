@@ -14,18 +14,14 @@ public class _03_JSPrompt {
 
         driver.get("http://the-internet.herokuapp.com/javascript_alerts");
 
-        Thread.sleep(2000);
-
         WebElement JSConfirm = driver.findElement(By.cssSelector("button[onclick='jsPrompt()']"));
         JSConfirm.click();
 
-        Thread.sleep(2000);
-
         driver.switchTo().alert().sendKeys("Hello Techno Study");
 
-        Thread.sleep(2000);
-
         driver.switchTo().alert().accept();
+
+        driver.quit();
 
     }
 
